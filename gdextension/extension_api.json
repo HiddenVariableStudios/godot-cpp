@@ -2,10 +2,10 @@
 	"header": {
 		"version_major": 4,
 		"version_minor": 3,
-		"version_patch": 0,
-		"version_status": "stable",
-		"version_build": "official",
-		"version_full_name": "Godot Engine v4.3.stable.official"
+		"version_patch": 2,
+		"version_status": "rc",
+		"version_build": "custom_build",
+		"version_full_name": "Godot Engine v4.3.2.rc.custom_build"
 	},
 	"builtin_class_sizes": [
 		{
@@ -145866,6 +145866,31 @@
 					}
 				},
 				{
+					"name": "set_navigation_map",
+					"is_const": false,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 2722037293,
+					"arguments": [
+						{
+							"name": "navigation_map",
+							"type": "RID"
+						}
+					]
+				},
+				{
+					"name": "get_navigation_map",
+					"is_const": true,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 2944877500,
+					"return_value": {
+						"type": "RID"
+					}
+				},
+				{
 					"name": "set_bidirectional",
 					"is_const": false,
 					"is_vararg": false,
@@ -146195,6 +146220,31 @@
 					"hash": 36873697,
 					"return_value": {
 						"type": "bool"
+					}
+				},
+				{
+					"name": "set_navigation_map",
+					"is_const": false,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 2722037293,
+					"arguments": [
+						{
+							"name": "navigation_map",
+							"type": "RID"
+						}
+					]
+				},
+				{
+					"name": "get_navigation_map",
+					"is_const": true,
+					"is_vararg": false,
+					"is_static": false,
+					"is_virtual": false,
+					"hash": 2944877500,
+					"return_value": {
+						"type": "RID"
 					}
 				},
 				{
@@ -231817,6 +231867,23 @@
 					"is_virtual": true
 				},
 				{
+					"name": "_reload_scripts",
+					"is_const": false,
+					"is_static": false,
+					"is_vararg": false,
+					"is_virtual": true,
+					"arguments": [
+						{
+							"name": "scripts",
+							"type": "Array"
+						},
+						{
+							"name": "soft_reload",
+							"type": "bool"
+						}
+					]
+				},
+				{
 					"name": "_reload_tool_script",
 					"is_const": false,
 					"is_static": false,
@@ -241594,7 +241661,7 @@
 						},
 						{
 							"name": "FLAG_MAX",
-							"value": 5
+							"value": 6
 						}
 					]
 				},
@@ -242148,6 +242215,13 @@
 					"setter": "set_draw_flag",
 					"getter": "get_draw_flag",
 					"index": 4
+				},
+				{
+					"type": "bool",
+					"name": "clamp_texture",
+					"setter": "set_draw_flag",
+					"getter": "get_draw_flag",
+					"index": 5
 				},
 				{
 					"type": "int",
